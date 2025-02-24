@@ -18,8 +18,10 @@ type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
 /**
- * 页面中最常用的的按钮元素，适合于完成特定的交互，支持 HTML button 和 a 链接 的所有属性
- * ### 引用方法
+ * The most commonly used button element on the page, suitable for specific interactions.
+ * Supports all attributes of HTML <button> and <a> elements.
+ * 
+ * ### Usage
  * 
  * ```javascript
  * import { Button } from 'MontrealComponent'
