@@ -1,14 +1,14 @@
-import Button, { ButtonType, ButtonProps, ButtonSize } from "./components/Button/button"
+import Button from "./components/Button/button"
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>Hello World</h2>
-      <h3>Hello World</h3>
-
       <Button> Hello </Button>
       <br />
-      <Button btnType={"primary"} size={"large"}></Button>
+      <Button btnType="primary" size="large">Just Beat it!</Button>
+      <Button btnType="danger" size="small">Hello World</Button>
+      <Button btnType="link">Google Search</Button>
+      <Button btnType="link" disabled>Baidu Search</Button>
+
     </>
   )
 }
