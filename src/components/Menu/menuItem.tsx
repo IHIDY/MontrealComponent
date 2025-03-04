@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classNames from "classnames";
 import { MenuContext } from "./Menu";
 import { useContext } from "react";
@@ -7,6 +8,7 @@ export interface MenuItemProps {
     disabled?: boolean;
     className?: string;
     style?: React.CSSProperties;
+    children?: React.ReactNode
 }
 
 const MenuItem: React.FC<MenuItemProps> = (props) => {
