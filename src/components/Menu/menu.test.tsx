@@ -17,9 +17,9 @@ const testVerProps: MenuProps = {
 const generateMenu = (props: MenuProps) => {
     return (
         <Menu {...props}>
-            <MenuItem index={0}> active </MenuItem>
-            <MenuItem disabled index={1}> disabled </MenuItem>
-            <MenuItem index={2}> xyz </MenuItem>
+            <MenuItem> active </MenuItem>
+            <MenuItem disabled> disabled </MenuItem>
+            <MenuItem> xyz </MenuItem>
         </Menu>
     );
 };
@@ -48,7 +48,7 @@ describe('test Menu and MenuItem component in default(horizontal) mode', () => {
         expect(testProps.onSelect).toHaveBeenCalledWith(2)
         fireEvent.click(disabledElement)
         expect(disabledElement).not.toHaveClass('is-active')
-        expect(testProps.onSelect).not.toHaveBeenCalledWith('1')
+        expect(testProps.onSelect).not.toHaveBeenCalledWith()
     })
     it('should render vertical mode when mode is set to vertical', () => {
         cleanup();
