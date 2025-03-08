@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> = (props) => {
     const { className, mode = 'horizontal', style, children, defaultIndex = 0, onSelect } = props;
     const [currentActive, setActive] = useState(defaultIndex)
 
-    const classes = classNames("viking-menu", className, {
+    const classes = classNames("MC-menu", className, {
         "menu-vertical": mode === "vertical",
     });
 

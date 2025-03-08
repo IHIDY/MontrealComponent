@@ -39,7 +39,7 @@ export const Button: FC<ButtonProps> = (props) => {
     } = props
 
     // btn, btn-lg, btn-primary
-    const classes = classNames('btn', className, {
+    const classes = classNames('Mc-btn', className, {
         [`btn-${btnType}`]: btnType,
         [`btn-${size}`]: size,
         'disabled': (btnType === 'link') && disabled

@@ -1,14 +1,27 @@
-import Button from "./components/Button/button"
+// import Button from "./components/Button/button";
+import Menu from "./components/Menu/Menu";
+import MenuItem from "./components/Menu/menuItem";
+
 function App() {
   return (
     <>
-      <Button> Hello </Button>
-      <br />
-      <Button btnType="primary" size="large">Just Beat it!</Button>
-      <Button btnType="danger" size="small">Hello World</Button>
-      <Button btnType="link">Google Search</Button>
-      <Button btnType="link" disabled>Baidu Search</Button>
-
+      <Menu defaultIndex={0} mode="vertical">
+        <MenuItem index={0} >
+          Multicam
+        </MenuItem>
+        <MenuItem index={1}>
+          Multicam Black
+        </MenuItem>
+        <MenuItem index={2}>
+          Mutlicam Tropic
+        </MenuItem>
+        <MenuItem index={3}>
+          Mutlicam Arid
+        </MenuItem>
+        <MenuItem index={4}>
+          Mutlicam Alpine
+        </MenuItem>
+      </Menu>
     </>
   )
 }
