@@ -26,7 +26,7 @@
         &.is-active,
         &:hover {
             color: $menu-item-active-color;
-            border-bottom: $menu-item-active-border-width solid $menu-item-active-color;
+            // border-bottom: $menu-item-active-border-width solid $menu-item-active-color;
         }
     }
 
@@ -62,13 +62,24 @@
         }
     }
 
-    .viking-submenu {
-        //display: none;
+    .MC-submenu {
+        // /**
+        // An educational CSS bugs fixed by me in Sevenbays on 2025/3/8
+        // */
+        // position: absolute;
+        // z-index: 100;
+        // top: calc(100% + 8px);
+        // left: 0;
+
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+        display: none;
         list-style: none;
         padding-left: 0;
         white-space: nowrap;
 
-        //transition: $menu-transition;
+        transition: $menu-transition;
+
         .menu-item {
             padding: $menu-item-padding-y $menu-item-padding-x;
             cursor: pointer;
@@ -82,8 +93,8 @@
         }
     }
 
-    .viking-submenu.menu-opened {
-        //display: block;
+    .MC-submenu.menu-opened {
+        display: block;
     }
 }
 
@@ -92,7 +103,7 @@
         border-bottom: $menu-item-active-border-width solid transparent;
     }
 
-    .viking-submenu {
+    .MC-submenu {
         position: absolute;
         background: $white;
         z-index: 100;
@@ -114,7 +125,7 @@
 
         &.is-active,
         &:hover {
-            border-bottom: 0px;
+            // border-bottom: 0px;
             border-left: $menu-item-active-border-width solid $menu-item-active-color;
         }
     }

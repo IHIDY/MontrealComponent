@@ -1,24 +1,33 @@
 // import Button from "./components/Button/button";
 import Menu from "./components/Menu/Menu";
 import MenuItem from "./components/Menu/menuItem";
+import SubMenu from "./components/Menu/subMenu";
 
 function App() {
   return (
     <>
       <Menu defaultIndex={0} mode="vertical">
-        <MenuItem index={0} >
+        <MenuItem>
           Multicam
         </MenuItem>
-        <MenuItem index={1}>
+        <MenuItem>
           Multicam Black
         </MenuItem>
-        <MenuItem index={2}>
+        <MenuItem>
           Mutlicam Tropic
         </MenuItem>
-        <MenuItem index={3}>
-          Mutlicam Arid
-        </MenuItem>
-        <MenuItem index={4}>
+        <SubMenu title="Company">
+          <MenuItem>
+            Crye Precision
+          </MenuItem>
+          <MenuItem>
+            Black Hawk
+          </MenuItem>
+          <MenuItem>
+            Qilo Tactical
+          </MenuItem>
+        </SubMenu>
+        <MenuItem>
           Mutlicam Alpine
         </MenuItem>
       </Menu>
