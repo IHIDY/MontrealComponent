@@ -1,12 +1,12 @@
 // import Button from "./components/Button/button";
-import Menu from "./components/Menu/Menu";
+import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
 import SubMenu from "./components/Menu/subMenu";
 
 function App() {
   return (
     <>
-      <Menu defaultIndex={0} mode="vertical">
+      <Menu defaultIndex={'0'} onSelect={(index) => alert(index)} mode="horizontal">
         <MenuItem>
           Multicam
         </MenuItem>
