@@ -6,7 +6,7 @@ import SubMenu from "./components/Menu/subMenu";
 function App() {
   return (
     <>
-      <Menu defaultIndex={'0'} onSelect={(index) => alert(index)} mode="horizontal">
+      <Menu defaultIndex={'0'} mode="horizontal">
         <MenuItem>
           Multicam
         </MenuItem>

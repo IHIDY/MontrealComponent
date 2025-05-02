@@ -28,7 +28,6 @@ const SubMenu: React.FC<SubMenuProps> = (props) => {
 
     const handleClick = (e: React.MouseEvent) => {
         e.preventDefault();
-        setOpen(!menuOpen);
         if (context.onSelect && !disabled && typeof index === 'string') {
             context.onSelect(index);
         }
@@ -57,7 +56,8 @@ const SubMenu: React.FC<SubMenuProps> = (props) => {
 
     return (
         <li key={index} className={classes}>
-            <div className="submenu-title" onClick={handleClick}>
+            <div className="submenu-title" onClick={handleClick} onMouseEnter={() => setOpen(true)}
+                onMouseLeave={() => setOpen(false)}>
                 {title}
             </div>
             {renderChildren()}
