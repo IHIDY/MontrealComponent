@@ -55,9 +55,9 @@ const SubMenu: React.FC<SubMenuProps> = (props) => {
     }
 
     return (
-        <li key={index} className={classes}>
-            <div className="submenu-title" onClick={handleClick} onMouseEnter={() => setOpen(true)}
-                onMouseLeave={() => setOpen(false)}>
+        <li key={index} className={classes} onClick={handleClick} onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}>
+            <div className="submenu-title" >
                 {title}
             </div>
             {renderChildren()}
